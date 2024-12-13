@@ -23,8 +23,9 @@
         <label for="weatherExample">Example:</label><input class="example" id="weatherExample" value="https://api.open-meteo.com/v1/forecast?latitude=52.9316783&longitude=1.2749668&hourly=temperature_2m,precipitation_probability,rain,showers,snowfall,weather_code,wind_speed_10m&timezone=Europe%2FLondon&forecast_days=1"></input><br/>
         <br/>
 
-
         <div id="save" class="save">Save</div>
+        <div id="export" class="export">Export</div>
+        <div id="import" class="import">Import - Drop file here</div>
       </div>
     </div>
   </body>

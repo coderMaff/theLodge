@@ -1,14 +1,14 @@
 body {
-	color:aliceblue;
-	background-color: #292929;	
-	font-family: Arial, Helvetica, sans-serif;	
+	color: aliceblue;
+	background-color: #292929;
+	font-family: Arial, Helvetica, sans-serif;
 	font-size: .9rem;
 }
 
 h1 {
 	background-color: seagreen;
 	padding: 5px;
-	margin: 5px;	
+	margin: 5px;
 	border-radius: 2px 10px 10px 10px;
 	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 	display: flex;
@@ -16,13 +16,14 @@ h1 {
 	align-items: center;
 }
 
-h4, h5 {
+h4,
+h5 {
 	margin: 5px;
 	padding: 5px;
 }
 
 input {
-	width: 900px;	
+	width: 900px;
 }
 
 label {
@@ -40,7 +41,7 @@ label {
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
-	width:300px;
+	width: 300px;
 }
 
 #clockWrap {
@@ -66,7 +67,7 @@ label {
 
 }
 
-#appointmentWrap {	
+#appointmentWrap {
 	padding: 5px;
 	margin: 5px;
 	background-color: darkslategray;
@@ -153,7 +154,7 @@ label {
 .arrowUp:before {
 	content: "";
 	display: block;
-	margin-top: -20px;	
+	margin-top: -20px;
 }
 
 .arrowDown {
@@ -168,7 +169,7 @@ label {
 .arrowDown:before {
 	content: "";
 	display: block;
-	margin-top: -20px;	
+	margin-top: -20px;
 }
 
 .aurora {
@@ -195,19 +196,42 @@ label {
 .beach {
 	color: yellow;
 	background-color: yellow;
-	width: 200px;	
+	width: 200px;
 }
 
 .example {
-	background-color:black;
-	color:aqua;
+	background-color: black;
+	color: aqua;
 	border: 1px solid black;
 }
 
+.export {
+	background-color: green;
+	color: black;
+	padding: 5px;
+	margin: 5px;
+	border-radius: 10px 10px 10px 10px;
+	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+	justify-content: center;
+	align-items: center;
+}
+
+.import {
+	background-color: yellow;
+	color: black;
+	padding: 5px;
+	margin: 5px;
+	border-radius: 10px 10px 10px 10px;
+	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+	justify-content: center;
+	align-items: center;
+	height: 100px;
+}
+
 .main {
-	display: flex;	
+	display: flex;
 	flex-direction: row;
-  	flex-wrap: wrap;
+	flex-wrap: wrap;
 }
 
 .save {
@@ -232,7 +256,7 @@ label {
 .water {
 	color: whitesmoke;
 	background-color: blue;
-	width: 200px;	
+	width: 200px;
 }
 
 .weatherContainerTemp {
@@ -274,8 +298,7 @@ label {
 	font-weight: bold;
 	font-size: .8rem;
 	border-radius: 2px 2px 2px 2px;
-	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
-	display: flex;
+	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);	
 	align-items: flex-end;
 	width: 25px;
 	display: flex;
@@ -291,9 +314,8 @@ label {
 .weatherPrecip {
 	font-weight: bold;
 	font-size: .7rem;
-	border-radius: 10px 10px 2px 2px;	
-	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
-	display: flex;
+	border-radius: 10px 10px 2px 2px;
+	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);	
 	align-items: flex-end;
 	width: 25px;
 	display: flex;
@@ -308,7 +330,6 @@ label {
 	background-color: lightsteelblue;
 	color: black;
 	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
-	display: flex;
 	align-items: flex-end;
 	width: 25px;
 	display: flex;
