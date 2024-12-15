@@ -8,6 +8,7 @@
     <script src="js/weather.js"></script>
     <script src="js/aurora.js"></script>
     <script src="js/tide.js"></script>
+    <script src="js/sun.js"></script>
   </head>  
   <body>     
     <div class="main">
@@ -20,6 +21,7 @@
       <div id="weatherWrap_wind"></div>        
       <div id="auroraWrap"></div>
       <div id="tideWrap"></div>
+      <div id="sunWrap"></div>
       <div id="blueSkyWrap"></div>
       <div>
         <div id="refresh">

@@ -43,7 +43,11 @@ window.addEventListener("load", () => {
                     div.style.backgroundColor = "#" + (element * 8).toString(16).padStart(2, '0') + "00" + (255 - element * 8).toString(16).padStart(2, '0');
                     div.style.height = (10 + element * 3).toString() + "px";                            
                     container.appendChild(div);                            
-                    if (now.getHours() == iCount) tempNow = element;
+                    if (now.getHours() == iCount) {
+                        tempNow = element;
+                        div.style.backgroundColor = "#FFFFFF";
+                        div.style.color = "#000000";
+                    }
                     iCount++;
                 });
                 let div = document.createElement("div");
@@ -65,7 +69,10 @@ window.addEventListener("load", () => {
                     div2.style.color = "#" + (col).toString(16).padStart(2, '0') + (col).toString(16).padStart(2, '0') + (255 - col).toString(16).padStart(2, '0');
                     div2.style.height = (15 + element).toString() + "px";
                     container2.appendChild(div2);                            
-                    if (now.getHours() == iCount) rainNow = element;
+                    if (now.getHours() == iCount) {
+                        div2.style.backgroundColor = "#FFFFFF";
+                        rainNow = element;
+                    }
                     iCount++;
                 });
                 let div2 = document.createElement("div");
@@ -86,7 +93,10 @@ window.addEventListener("load", () => {
                     div3.className = "weatherWind";
                     div3.style.height = (15 + element).toString() + "px";
                     container3.appendChild(div3);
-                    if (now.getHours() == iCount) windNow = element;
+                    if (now.getHours() == iCount) {
+                        div3.style.backgroundColor = "#FFFFFF";
+                        windNow = element;
+                    }
                     iCount++;
                 });
                 let div3 = document.createElement("div");

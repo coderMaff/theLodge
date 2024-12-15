@@ -9,7 +9,7 @@ window.addEventListener("load", () => {
 
 				hElement.innerHTML = '<h4>Kardiak.co.uk Downloads</h4>'; // Clear previous content							
 				let div = document.createElement('div');
-				div.innerHTML = `Program Downloads:${data.sumDownloads} 3d Object Downloads:${data.sum3dObjects}`;
+				div.innerHTML = `Program Downloads:${data.sumDownloads}<br/> 3d Object Downloads:${data.sum3dObjects}`;
 				hElement.appendChild(div);
 
 			})

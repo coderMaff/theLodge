@@ -4,6 +4,7 @@ window.addEventListener("load", () => {
 	var appointmentICS = localStorage.getItem("appointmentICS");
 	var tideJSON = localStorage.getItem("tideJSON");
 	var weatherJSON = localStorage.getItem("weatherJSON");
+	var sunJSON = localStorage.getItem("sunJSON");
 
 	var hSetup = document.getElementById("setupWrap");
 
@@ -11,11 +12,13 @@ window.addEventListener("load", () => {
 	var hICS = document.getElementById("ics");
 	var hTide = document.getElementById("tide");
 	var hWeather = document.getElementById("weather");
+	var hSun = document.getElementById("sun");
 
 	hTitle.value = houseName;
 	hICS.value = appointmentICS;
 	hTide.value = tideJSON;
 	hWeather.value = weatherJSON;
+	hSun.value = sunJSON;
 
 	var hSave = document.getElementById("save");
 	hSave.addEventListener("click", () => {
@@ -29,6 +32,7 @@ window.addEventListener("load", () => {
 		localStorage.setItem("appointmentICS", hICS.value);
 		localStorage.setItem("tideJSON", hTide.value);
 		localStorage.setItem("weatherJSON", hWeather.value);
+		localStorage.setItem("sunJSON", hSun.value);
 
 		alert("Saved... Redirecting");
 		window.location.href = "index.php";
@@ -60,6 +64,7 @@ window.addEventListener("load", () => {
 				hICS.value = data.appointmentICS;
 				hTide.value = data.tideJSON;
 				hWeather.value = data.weatherJSON;
+				hSun.value = data.sunJSON;
 			};
 			reader.readAsText(file);
 		}
@@ -74,7 +79,8 @@ window.addEventListener("load", () => {
 			houseName: hTitle.value,
 			appointmentICS: hICS.value,
 			tideJSON: hTide.value,
-			weatherJSON: hWeather.value
+			weatherJSON: hWeather.value,
+			sunJSON: hSun.value
 		};
 
 		const jsonData = JSON.stringify(data, null, 2);
