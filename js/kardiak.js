@@ -1,6 +1,10 @@
 window.addEventListener("load", () => {
 	var hElement = document.getElementById("kardiakWrap");
-
+	if(localStorage.getItem("kardiakEnabled") == "false") {
+		hElement.className = "hidden";
+		hElement.inertHTML = null
+		return;
+	}
 	var updateElement = () => {
 		fetch('https://kardiak.co.uk/api/download/count')
 			.then(response => response.json())

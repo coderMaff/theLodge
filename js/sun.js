@@ -1,5 +1,10 @@
 window.addEventListener("load", () => {
 	var hElement = document.getElementById("sunWrap");
+	if(localStorage.getItem("sunJSONEnabled") == "false") {
+		hElement.className = "hidden";
+		hElement.inertHTML = null;
+		return;
+	}
 
 	var updateElement = () => {
 		fetch(localStorage.getItem("sunJSON"))

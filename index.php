@@ -9,6 +9,7 @@
     <script src="js/aurora.js"></script>
     <script src="js/tide.js"></script>
     <script src="js/sun.js"></script>
+    <script src="js/countdown.js"></script>
   </head>  
   <body>     
     <div class="main">
@@ -22,7 +23,9 @@
       <div id="auroraWrap"></div>
       <div id="tideWrap"></div>
       <div id="sunWrap"></div>
+      <div id="countdownWrap"></div>
       <div id="blueSkyWrap"></div>
+      
       <div>
         <div id="refresh">
           <a href="">Refresh</a>

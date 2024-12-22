@@ -1,5 +1,10 @@
 window.addEventListener("load", () => {
 	var hElement = document.getElementById("auroraWrap");
+	if(localStorage.getItem("auroraEnabled") == "false") {
+		hElement.className = "hidden";
+		hElement.inertHTML = null;
+		return;
+	}
 
 	var updateElement = () => {
 		fetch('https://aurorawatch.lancs.ac.uk/api/0.1/status.xml')

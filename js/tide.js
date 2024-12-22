@@ -1,5 +1,10 @@
 window.addEventListener("load", () => {
 	var hElement = document.getElementById("tideWrap");
+	if(localStorage.getItem("tideJSONEnabled") == "false") {
+		hElement.className = "hidden";
+		hElement.inertHTML = null;
+		return;
+	}
 
 	var updateElement = () => {
 		fetch(localStorage.getItem("tideJSON"))

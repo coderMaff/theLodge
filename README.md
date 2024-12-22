@@ -21,3 +21,8 @@
         All URLs are stored localy in your browser in localStorage
 
         NB - The Lodge is designed to run localy on a local web server, if you run it on somone elses web sever then you may be sending your private ICS file to their server, which could be viewed and logged.
+
+
+        To do:
+        Add countdowns.
+        Add caching for JSON files.

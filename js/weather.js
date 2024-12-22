@@ -6,6 +6,24 @@ window.addEventListener("load", () => {
             .then(data => {
 
                 var hElement = document.getElementById("weatherWrap");
+                if(localStorage.getItem("weatherJSONEnabled") == "false") {
+                    hElement.className = "hidden";
+                    hElement.inertHTML = null;
+
+                    hElement = document.getElementById("weatherWrap_temp");
+                    hElement.inertHTML = null;
+                    hElement.className = "hidden";
+
+                    hElement = document.getElementById("weatherWrap_wind");
+                    hElement.inertHTML = null;
+                    hElement.className = "hidden";
+
+                    hElement = document.getElementById("weatherWrap_rain");
+                    hElement.inertHTML = null;
+                    hElement.className = "hidden";
+                    return;
+                }
+
                 var tempNow = 0;
                 var rainNow = 0;
                 var windNow = 0;

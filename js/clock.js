@@ -13,6 +13,11 @@ window.addEventListener("load", () => {
     
 	var timer = setInterval(() => {
 	    let now = new Date();
+		if(localStorage.getItem("titleEnabled") == "false") {
+			hClock.className = "hidden";
+			hClock.inertHTML = null
+			return;
+		}		
 	    hClock.innerHTML = `<ul><li>${defaultText}</li><li>${pzero(now.getDate())}/${pzero(now.getMonth() + 1)}/${pzero(now.getFullYear())} - ${pzero(now.getHours())}:${pzero(now.getMinutes())}:${pzero(now.getSeconds())}</li></ul>`;    
 	}, 1000);
 });
