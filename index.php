@@ -23,7 +23,10 @@
       <div id="auroraWrap"></div>
       <div id="tideWrap"></div>
       <div id="sunWrap"></div>
-      <div id="countdownWrap"></div>
+      <div id="countdown1Wrap"></div>
+      <div id="countdown2Wrap"></div>
+      <div id="countdown3Wrap"></div>
+      <div id="countdown4Wrap"></div>
       <div id="blueSkyWrap"></div>
       
       <div>

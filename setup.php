@@ -60,7 +60,7 @@
         
         <label for="sun">Sunrise Sunset URL</label><input id="sun"></input><br/>
         <label for="sunExample">Example:</label><input class="example" id="sunExample" value="https://api.sunrisesunset.io/json?lat=38.907192&lng=-77.036873"></input><br/>
-        <label for="weatherEnabled">Enabled</label><input type="checkbox" id="sunEnabled" checked></input>
+        <label for="sunEnabled">Enabled</label><input type="checkbox" id="sunEnabled" checked></input>
         <br/>
         <br/>
 
@@ -71,8 +71,33 @@
         <label for="auroraEnabled">Enable Aurora</label><input type="checkbox" id="auroraEnabled" checked></input>
         <br/>
         <br/>        
+
+        <label for="countdown1Name">Countdown 1 Name</label><input id="countdown1Name"></input><br/>
+        <label for="countdown1Date">Countdown 1 Date</label><input id="countdown1Date"></input><br/>
+        <label for="countdown1Enabled">Enabled</label><input type="checkbox" id="countdown1Enabled" checked></input>
+        <br/>
+        <br/>
+
+        <label for="countdown2Name">Countdown 2 Name</label><input id="countdown2Name"></input><br/>
+        <label for="countdown2Date">Countdown 2 Date</label><input id="countdown2Date"></input><br/>
+        <label for="countdown2Enabled">Enabled</label><input type="checkbox" id="countdown2Enabled" checked></input>
+        <br/>
+        <br/>
+
+        <label for="countdown3Name">Countdown 3 Name</label><input id="countdown3Name"></input><br/>
+        <label for="countdown3Date">Countdown 3 Date</label><input id="countdown3Date"></input><br/>
+        <label for="countdown3Enabled">Enabled</label><input type="checkbox" id="countdown3Enabled" checked></input>
+        <br/>
+        <br/>
+
+        <label for="countdown4Name">Countdown 4 Name</label><input id="countdown4Name"></input><br/>
+        <label for="countdown4Date">Countdown 4 Date</label><input id="countdown4Date"></input><br/>
+        <label for="countdown4Enabled">Enabled</label><input type="checkbox" id="countdown4Enabled" checked></input>
+        <br/>
+        <br/>
       
         <div id="save" class="save">Save</div>
+        <div id="useDefaults" class="save">Use Defaults</div>
         <div id="export" class="export">Export</div>
         <div id="import" class="import">Import - Drop file here</div>
       </div>

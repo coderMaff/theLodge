@@ -76,7 +76,10 @@ label {
 	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
-#countdownWrap {
+#countdown1Wrap, 
+#countdown2Wrap,
+#countdown3Wrap,
+#countdown4Wrap {
 	padding: 5px;
 	margin: 5px;
 	background-color: #101010;
