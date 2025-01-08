@@ -53,7 +53,7 @@
         <br/>
         
         <label for="weather">Weather Url</label><input id="weather"></input><br/>
-        <label for="weatherExample">Example:</label><input class="example" id="weatherExample" value="https://api.open-meteo.com/v1/forecast?latitude=52.9316783&longitude=1.2749668&hourly=temperature_2m,precipitation_probability,rain,showers,snowfall,weather_code,wind_speed_10m&timezone=Europe%2FLondon&forecast_days=1"></input><br/>
+        <label for="weatherExample">Example:</label><input class="example" id="weatherExample" value="https://api.open-meteo.com/v1/forecast?latitude=52.9316783&longitude=1.2749668&hourly=temperature_2m,precipitation_probability,rain,showers,snowfall,weather_code,wind_speed_10m&timezone=Europe%2FLondon&forecast_days=7"></input><br/>
         <label for="weatherEnabled">Enabled</label><input type="checkbox" id="weatherEnabled" checked></input>
         <br/>
         <br/>

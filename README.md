@@ -1,4 +1,5 @@
         Household Web Feed
+        =============================
 
         Designed to be used on a large touchscreen or smart mirror.
 
@@ -17,6 +18,14 @@
         In the "Sunrise Sunset URL" enter the URL for sunrisesunset.io with your longitude and latitude embeded - See here for more information - https://sunrisesunset.io/
 
         Use the save button to save your settings and return to the data screen, and the export button to export them to a json file. Once exported you can import them into another device or import them at a later point.
+
+        Dates for the coundown are in the format YYYY-MM-DDTHH:MM:SSZ
+
+        Use the Enable buttons to turn on and off the various widgets
+
+        Use the Export button to back up your settings and drag a settings file back to the "Import - Drop file here" to import a previously backed up set of settings.
+
+        Use "Use Defaults" for a quick start example to get you up and running.
 
         All URLs are stored localy in your browser in localStorage
 

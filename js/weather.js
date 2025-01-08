@@ -35,9 +35,9 @@ window.addEventListener("load", () => {
                 container4.className = "weatherContainerTime";
                 hElement.appendChild(container4);
                 let now = new Date();
-                for (let i = 0; i < 24; i++) {
+                for (let i = now.getHours() - 1; i < now.getHours() + 24; i++) {
                     let div4b = document.createElement('div');
-                    div4b.innerText = i.toString();
+                    div4b.innerText = (i % 24).toString();
                     div4b.className = "weatherTime";
                     if (now.getHours() == i) div4b.className += " weatherTimeNow";
                     container4.appendChild(div4b);
@@ -53,6 +53,10 @@ window.addEventListener("load", () => {
                 container.className = "weatherContainerTemp";
                 hElement.appendChild(container);
                 data.hourly.temperature_2m.forEach(element => {
+                    if(iCount < now.getHours() - 1 || iCount > now.getHours() + 23) {
+                        iCount++;
+                        return;
+                    }
                     element = Math.round(element);
                     let div = document.createElement('div');
                     div.innerText = element.toString();
@@ -79,6 +83,10 @@ window.addEventListener("load", () => {
                 container2.className = "weatherContainerRain";
                 hElement.appendChild(container2);
                 data.hourly.precipitation_probability.forEach(element => {
+                    if(iCount < now.getHours() - 1 || iCount > now.getHours() + 23) {
+                        iCount++;
+                        return;
+                    }
                     let div2 = document.createElement('div');
                     div2.innerText = element.toString();
                     div2.className = "weatherPrecip";                                 
@@ -105,6 +113,10 @@ window.addEventListener("load", () => {
                 container3.className = "weatherContainerWind";
                 hElement.appendChild(container3);
                 data.hourly.wind_speed_10m.forEach(element => {
+                    if(iCount < now.getHours() - 1 || iCount > now.getHours() + 23) {
+                        iCount++;
+                        return;
+                    }
                     element = Math.round(element);
                     let div3 = document.createElement('div');
                     div3.innerText = element.toString();
